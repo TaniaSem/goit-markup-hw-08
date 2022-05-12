@@ -1,5 +1,11 @@
 .title {
-    @include font (null, 36px, 1.17, 0.03em);
+    @include font (null, 28px, 1.17, 0.03em);
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: var(--typical-gap);
+
+    @media screen and (min-width: 1200px) {
+        @include font (null, 36px, 1.17, 0.03em);
+        margin-bottom: 50px;
+    }
+    
 }
