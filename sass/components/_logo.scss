@@ -1,0 +1,21 @@
+.logo {
+    color: var(--logo-color);
+    font-family: $fontLogo;
+    @include font (700, 26px, 1.2, null);
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.logo__accent-part {
+    color: var(--accent-color);
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    display: block;
+
+    color: var(--primary-bg-color);
+}
+

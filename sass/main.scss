@@ -1,0 +1,24 @@
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/placeholder";
+@import "./utils/mixins";
+///////////////////////
+@import "./base/reset";
+@import "./base/comon";
+///////////////////////
+@import "./components/container";
+@import "./components/section";
+@import "./components/title";
+@import "./components/btn";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/soc-list";
+/////////////////////////
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";

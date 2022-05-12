@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: $fontPrimary;
+}
+
+.list {
+    list-style: none;
+}

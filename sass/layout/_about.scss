@@ -1,0 +1,25 @@
+.about__list {
+    display: flex;
+}
+
+.about__item {
+    position: relative;
+    &+&{
+        margin-left: var(--typical-gap);
+    }
+}
+
+.about__title {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    @include font (700, 14px, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+}

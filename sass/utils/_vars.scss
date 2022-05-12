@@ -1,0 +1,31 @@
+/* колір основного тексту #212121 */
+/* другорядний колір тексту #757575 */
+/* колір Героя #FFFFFF */
+/* акцент #2196F3 */
+/* лого: одна част. акцент, інша #000000 */
+
+/* основний колір bg #FFFFFF */
+/* другорядний колір фону #F5F4FA */
+/* колір Героя та Футеру #2F303A */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196f3;
+    --hover-accent-color: #188ce8;
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #f5f4fa;
+    --footer-bg-color: #2f303a;
+    --logo-color: #000000;
+    --primary-icon-color: #afb1b8;
+
+    --border-nav: #ececec;
+    --border-cards: #eeeeee;
+
+    --typical-gap: 30px;
+}
+
+$fontPrimary: Roboto,
+sans-serif;
+$fontLogo: Raleway,
+sans-serif;

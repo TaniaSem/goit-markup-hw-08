@@ -1,0 +1,35 @@
+.features.section {
+    padding-bottom: 0;
+}
+
+.features__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__item {
+    width: 270px;
+
+    &+& {
+    margin-left: var(--typical-gap);
+    }
+}
+
+.features__thumb {
+    @include flexCenter;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    margin-bottom: var(--typical-gap);
+}
+
+.features__title {
+    margin-bottom: 10px;
+
+    @include font (null, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+}
+
+.features__text {
+    color: var(--secondary-text-color);
+    @include font (null, 14px, 1.71, 0.03em);
+}
