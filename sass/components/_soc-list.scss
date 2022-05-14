@@ -2,6 +2,10 @@
     @include flexCenter;
 }
 
+.social__item + .social__item {
+    margin-left: 10px;
+}
+
 .social__link {
     @include flexCenter;
     width: 44px;
