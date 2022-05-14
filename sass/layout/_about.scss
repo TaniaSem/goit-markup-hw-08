@@ -1,12 +1,19 @@
+.about {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
 .about__list {
-    // display: flex;
+    display: flex;
 }
 
 .about__item {
     position: relative;
-    // &+&{
-    //     margin-left: var(--typical-gap);
-    // }
+    &+&{
+        margin-left: var(--typical-gap);
+    }
 }
 
 .about__title {
