@@ -619,9 +619,6 @@ body {
 
 .features__item {
   width: 100%;
-}
-
-.features__item + .features__item {
   margin-bottom: var(--typical-gap);
 }
 
@@ -630,11 +627,15 @@ body {
     width: calc(100%/2 - 30px);
     margin-left: 30px;
   }
+  .features__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc(100%/4 - 30px);
+    margin-bottom: 0;
   }
 }
 
@@ -724,6 +725,9 @@ body {
   .team__item {
     width: calc(100%/2 - 30px);
     margin-left: var(--typical-gap);
+  }
+  .team__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
