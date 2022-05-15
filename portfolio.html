@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -96,19 +97,46 @@
             <li class="portfolio__items">
               <a href="" class="portfolio__cards">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portf-img-1.jpg"
-                    alt="екран ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-min/desk-port-1-min.jpg    1x,
+                        ./images/desktop-min/desk-port-1@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-min/tab-port-1-min.jpg    1x,
+                        ./images/tablet-min/tab-port-1@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-min/mob-port-1-min.jpg    1x,
+                        ./images/mobile-min/mob-port-1@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile-min/mob-port-1-min.jpg    1x,
+                        ./images/mobile-min/mob-port-1@2x-min.jpg 2x
+                      "
+                      src="./images/mobile-min/mob-port-1-min.jpg"
+                      alt="екран ноутбука"
+                      width="450px"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="portfolio__box">
+                <div class="portfolio__box portfolio__box--padding">
                   <h2 class="portfolio__subtitle">Технокряк</h2>
                   <p class="portfolio__text">Веб-сайт</p>
                 </div>
@@ -117,12 +145,39 @@
             <li class="portfolio__items">
               <a href="" class="portfolio__cards">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portf-img-2.jpg"
-                    alt="два баскетбольні гравці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-min/desk-port-2-min.jpg    1x,
+                        ./images/desktop-min/desk-port-2@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-min/tab-port-2-min.jpg    1x,
+                        ./images/tablet-min/tab-port-2@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-min/mob-port-2-min.jpg    1x,
+                        ./images/mobile-min/mob-port-2@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile-min/mob-port-2-min.jpg    1x,
+                        ./images/mobile-min/mob-port-2@2x-min.jpg 2x
+                      "
+                      src="./images/mobile-min/mob-port-2-min.jpg"
+                      alt="два баскетбольні гравці"
+                      width="450px"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -140,12 +195,39 @@
             <li class="portfolio__items">
               <a href="" class="portfolio__cards">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portf-img-3.jpg"
-                    alt="два баскетбольні гравці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-min/desk-port-3-min.jpg    1x,
+                        ./images/desktop-min/desk-port-3@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-min/tab-port-3-min.jpg    1x,
+                        ./images/tablet-min/tab-port-3@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-min/mob-port-3-min.jpg    1x,
+                        ./images/mobile-min/mob-port-3@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile-min/mob-port-3-min.jpg    1x,
+                        ./images/mobile-min/mob-port-3@2x-min.jpg 2x
+                      "
+                      src="./images/mobile-min/mob-port-3-min.jpg"
+                      alt="лого ресторану"
+                      width="450px"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -161,12 +243,39 @@
             <li class="portfolio__items">
               <a href="" class="portfolio__cards">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portf-img-4.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-min/desk-port-4-min.jpg    1x,
+                        ./images/desktop-min/desk-port-4@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-min/tab-port-4-min.jpg    1x,
+                        ./images/tablet-min/tab-port-4@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-min/mob-port-4-min.jpg    1x,
+                        ./images/mobile-min/mob-port-4@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile-min/mob-port-4-min.jpg    1x,
+                        ./images/mobile-min/mob-port-4@2x-min.jpg 2x
+                      "
+                      src="./images/mobile-min/mob-port-4-min.jpg"
+                      alt="навушники"
+                      width="450px"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -182,12 +291,39 @@
             <li class="portfolio__items">
               <a href="" class="portfolio__cards">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portf-img-5.jpg"
-                    alt="дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-min/desk-port-5-min.jpg    1x,
+                        ./images/desktop-min/desk-port-5@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-min/tab-port-5-min.jpg    1x,
+                        ./images/tablet-min/tab-port-5@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-min/mob-port-5-min.jpg    1x,
+                        ./images/mobile-min/mob-port-5@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile-min/mob-port-5-min.jpg    1x,
+                        ./images/mobile-min/mob-port-5@2x-min.jpg 2x
+                      "
+                      src="./images/mobile-min/mob-port-5-min.jpg"
+                      alt="дві коробки"
+                      width="450px"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -203,12 +339,39 @@
             <li class="portfolio__items">
               <a href="" class="portfolio__cards">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portf-img-6.jpg"
-                    alt="монітор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-min/desk-port-6-min.jpg    1x,
+                        ./images/desktop-min/desk-port-6@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-min/tab-port-6-min.jpg    1x,
+                        ./images/tablet-min/tab-port-6@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-min/mob-port-6-min.jpg    1x,
+                        ./images/mobile-min/mob-port-6@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile-min/mob-port-6-min.jpg    1x,
+                        ./images/mobile-min/mob-port-6@2x-min.jpg 2x
+                      "
+                      src="./images/mobile-min/mob-port-6-min.jpg"
+                      alt="монітор"
+                      width="450px"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -226,12 +389,39 @@
             <li class="portfolio__items">
               <a href="" class="portfolio__cards">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portf-img-7.jpg"
-                    alt="розгорнута книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-min/desk-port-7-min.jpg    1x,
+                        ./images/desktop-min/desk-port-7@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-min/tab-port-7-min.jpg    1x,
+                        ./images/tablet-min/tab-port-7@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-min/mob-port-7-min.jpg    1x,
+                        ./images/mobile-min/mob-port-7@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile-min/mob-port-7-min.jpg    1x,
+                        ./images/mobile-min/mob-port-7@2x-min.jpg 2x
+                      "
+                      src="./images/mobile-min/mob-port-7-min.jpg"
+                      alt="розгорнута книга"
+                      width="450px"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -247,12 +437,39 @@
             <li class="portfolio__items">
               <a href="" class="portfolio__cards">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portf-img-8.jpg"
-                    alt="бірка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-min/desk-port-8-min.jpg    1x,
+                        ./images/desktop-min/desk-port-8@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-min/tab-port-8-min.jpg    1x,
+                        ./images/tablet-min/tab-port-8@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-min/mob-port-8-min.jpg    1x,
+                        ./images/mobile-min/mob-port-8@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile-min/mob-port-8-min.jpg    1x,
+                        ./images/mobile-min/mob-port-8@2x-min.jpg 2x
+                      "
+                      src="./images/mobile-min/mob-port-8-min.jpg"
+                      alt="бірка"
+                      width="450px"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -268,12 +485,39 @@
             <li class="portfolio__items">
               <a href="" class="portfolio__cards">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portf-img-9.jpg"
-                    alt="екран ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop-min/desk-port-9-min.jpg    1x,
+                        ./images/desktop-min/desk-port-9@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-min/tab-port-9-min.jpg    1x,
+                        ./images/tablet-min/tab-port-9@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-min/mob-port-9-min.jpg    1x,
+                        ./images/mobile-min/mob-port-9@2x-min.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/mobile-min/mob-port-9-min.jpg    1x,
+                        ./images/mobile-min/mob-port-9@2x-min.jpg 2x
+                      "
+                      src="./images/mobile-min/mob-port-9-min.jpg"
+                      alt="робота за ноутбуком"
+                      width="450px"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
