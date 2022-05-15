@@ -1,0 +1,104 @@
+.menu-open-btn, .menu-close-btn {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-left: auto;  
+    padding: 12px 8px;
+    color: var(--primary-text-color);
+    &:hover, &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.menu-icon, .close-icon {
+    fill: currentColor;
+}
+
+.menu-close-btn {
+    padding: 11px 10.33px 10.33px 11px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+}
+
+.mob-menu {
+    position: fixed;
+    background-color: var(--primary-bg-color);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding: 48px 40px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.mob-menu__item {
+    &+& {
+        margin-top: 32px;
+    }
+}
+
+.mob-menu__link {
+    @include font (500, 40px, 1.18, 0.02em);
+    color: var(--primary-text-color);
+    &:hover, &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-menu__contacts {
+    padding-bottom: 64px;
+}
+
+.mob-menu__element + .mob-menu__element {
+    margin-top: 32px;
+}
+
+.mob-menu__tel {
+    @include font (500, 26px, 1.18, 0.02em);
+    color: var(--accent-color);
+    @media screen and (min-width: 376px) {
+        @include font (500, 34px, 1.18, 0.02em);
+    }
+}
+
+.mob-menu__email {
+    @include font (500, 24px, 1.17, 0.02em);
+    color: var(--secondary-text-color);
+}
+
+.mob-menu__socials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mob-menu__line {
+    &+& {
+        margin-left: 10px;
+    }
+    &:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}
+
+.mob-menu__social {
+    @include font (500, 18px, 1.22, 0.02em);
+    color: var(--accent-color);
+    padding-right: 10px;
+}

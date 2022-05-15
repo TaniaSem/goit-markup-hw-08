@@ -1,11 +1,19 @@
 .logo {
     color: var(--logo-color);
     font-family: $fontLogo;
-    @include font (700, 26px, 1.2, null);
+    @include font (700, 24px, 1.17, 0.03em);
+    @include desktop {
+        @include font (700, 26px, 1.2, 0.03em);
+    }
 }
 
 .header__logo {
-    margin-right: 93px;
+    @include tablet {
+        margin-right: 88px;
+    }
+    @include desktop {
+        margin-right: 93px;
+    }
 }
 
 .logo__accent-part {
