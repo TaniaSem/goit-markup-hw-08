@@ -120,8 +120,6 @@
     position: relative;
 }
 
-
-
 .modal__icon {
     position: absolute;
     left: 0;
@@ -179,28 +177,8 @@
 
     font-family: $fontPrimary;
     font-style: normal;
-    @include font (null, 6.5px, 1, 0.03em);
-    color: var(--secondary-text-color);
+    @include font (null, 12px, 1.17, 0.03em);
 
-    @media screen and (min-width:350px) {
-        @include font (null, 7.5px, 1.17, 0.03em);
-    }
-
-    @media screen and (min-width:375px) {
-        @include font (null, 8.5px, 1.17, 0.03em);
-    }
-
-    @media screen and (min-width:400px) {
-        @include font (null, 9.5px, 1.17, 0.03em);
-    }
-
-    @media screen and (min-width:430px) {
-        @include font (null, 10.5px, 1.17, 0.03em);
-    }
-
-    @include mobile {
-        @include font (null, 12px, 1.17, 0.03em);
-    }
     @include desktop {
         @include font (null, 14px, 1.71, 0.03em);
     }
@@ -237,7 +215,7 @@
 .modal__file {
     color: var(--accent-color);
     text-decoration: underline;
-    margin-left: 5px;
+    margin-left: 3px;
     
     &:focus, 
     &:hover {
